@@ -1,11 +1,18 @@
-def coverter(fahrenheit):
-    return fahrenheit = (9/5 * C) + 32
+def celsius_to_fahrenheit(celsius):
+    # Convert Celsius to Fahrenheit
+    return (celsius * 9/5) + 32
 
 
 def main():
-    C = int(input("Enter temperature in degrees celcius: "))
+    # Ask for temperature in Celsius
+    temp_c = float(input("Enter temperature in Celsius: "))
+    
+    # Convert and display
+    temp_f = celsius_to_fahrenheit(temp_c)
+    print(f"{temp_c}°C is equal to {temp_f}°F")
 
-    return fahrenheit
 
+# Run the program
 if __name__ == "__main__":
     main()
+
